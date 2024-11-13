@@ -1,4 +1,4 @@
-# Aaditya-Pandey
+# BITCOIN PREDICTION
 
 A Bitcoin time series future price prediction AI model uses historical price data and advanced machine learning techniques to forecast future price trends. While it can offer insights, its accuracy is highly dependent on data quality, model complexity, and market volatility.
 
