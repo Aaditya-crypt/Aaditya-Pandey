@@ -4,6 +4,6 @@ A Bitcoin time series future price prediction AI model uses historical price dat
 
 It's been prepared by team members:
   1) Samarth Kasalkar
-  2) Bhuvaneshvari Pawar
+  2) Bhuvaneshwari Pawar
   3) Kajal Halandar
   4) Aaditya Pandey
