@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Prediction using FbProphet</title>
+
+    <!-- External CSS file (optional if you have custom styles) -->
+    <link rel="stylesheet" href="D:\CollegeProjects\sybitcoin\BitcoinpredictionUI\static\css\style1.css">
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('D:/CollegeProjects/sybitcoin/BitcoinpredictionUI/static/image/bgimage1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+            display: flex;
+            flex-direction: column;
+            animation: fadeInBody 2s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Header and Navigation */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: #f2a900;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00ffcc;
+        }
+
+        .tagline {
+            color: #f2a900;
+            font-size: 1.2rem;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeInMain 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInMain {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #f2a900;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Call to Action Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.4s ease, background 0.4s ease;
+            text-decoration: none;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: zoomInButton 2s ease-in-out;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #feb47b, #ff7e5f);
+            transform: scale(1.1);
+        }
+
+        @keyframes zoomInButton {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            text-align: center;
+            color: #f2a900;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInFooter 3s ease-in-out;
+        }
+
+        @keyframes fadeInFooter {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Developer Name in Footer */
+        footer p:last-child {
+            text-align: right;
+            margin-top: 10px;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="predict.html">Predict</a></li>
+            </ul>
+        </nav>
+        <p class="tagline">Invest in Bitcoin: The Currency of Tomorrow</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Bitcoin Prediction using FbProphet</h1>
+        <p>
+            Bitcoin is known as a type of cryptocurrency because it uses cryptography to keep it secure. 
+            There are no physical bitcoins, only balances kept on a public ledger that everyone has transparent 
+            access to, although each record is encrypted.
+        </p>
+        <p>
+            Bitcoin transactions are verified by a massive amount of computing power via a process known as “mining”. 
+            Bitcoin is not issued or backed by any banks or governments, nor is an individual bitcoin valuable as a commodity.
+        </p>
+        <p>
+            Bitcoin is one of the first digital currencies to use peer-to-peer (P2P) technology to facilitate 
+            instant payments. The independent individuals and companies who own the computing power and participate 
+            in the Bitcoin network are in charge of processing the transactions on the blockchain.
+        </p>
+        
+        <!-- Start Prediction Button -->
+        <a href="predict.html" class="btn">Start Prediction</a>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 70%;"><p style="float:left">&copy; 2024 Bitcoin Prediction | All Rights Reserved</p></td>
+                <td><p style="float:right">Developed by Aaditya Anil Pandey</p></td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
